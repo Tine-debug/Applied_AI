@@ -25,7 +25,8 @@ def PlotSample(index: int, images):
 
 # Task 1.1.3
 
-images_flat= images.reshape(images.shape[0], -1)
+images_flat = images.reshape(images.shape[0], images.shape[1]*images.shape[2]*images.shape[3])
+
 
 def plotImage(X):
     plt.figure(figsize=(1.5, 1.5))
